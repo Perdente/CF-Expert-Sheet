@@ -108,6 +108,31 @@ void SectumSempra()
 		}
 	}
 	cout<<"No";
+	/*
+	cin>>n;
+	V v(n);
+	x=0;
+	lp(i,n){
+		cin>>v[i];
+		x^=v[i];
+	}
+	if(x==0)groot("Yes")
+	y=0;
+	lp(i,n){
+		y^=v[i];
+		if(x==y){
+			p=i+1;break;
+		}
+	}
+	y=0;
+	rlp(i,n-1,0){
+		y^=v[i];
+		if(x==y){
+			q=i+1;break;
+		}
+	}
+	meem(p<q)
+	*/
 	lol
 }
 
