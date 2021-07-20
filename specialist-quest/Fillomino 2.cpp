@@ -96,6 +96,7 @@ void SectumSempra()
 	lp(i,n){
 		cin>>v[i][i];
 	}
+	//Mat(v,n,n)
 	lp(t,n){
 		temp=v[t][t]-1;
 		i=t,j=t;
@@ -108,12 +109,16 @@ void SectumSempra()
 			while(temp and i+1<n and v[i+1][j]==0){
 				v[i+1][j]=v[t][t];
 				i++;temp--;
+				while(temp and j-1>=0 and v[i][j-1]==0){
+					v[i][j-1]=v[t][t];
+					j--;temp--;
+				}
 			}
 		}
 	}
 	lp(i,n){
 		lp(j,n){
-			if(v[i][j]==0)cout<<" ";
+			if(v[i][j]==0)cout<<"  ";
 			else cout<<v[i][j]<<" ";
 		}
 		lol
