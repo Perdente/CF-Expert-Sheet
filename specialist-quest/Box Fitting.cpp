@@ -109,7 +109,28 @@ void SectumSempra()
 		cnt++;
 	}
 	cout<<cnt<<endl;
-
+	
+	
+	/*
+	cin>>n>>w;
+	multiset<int>s;
+	lp(i,n){
+		cin>>x;s.insert(x);
+	}
+	temp=w,cnt=1;
+	while(!s.empty()){
+		auto r=s.upper_bound(temp);
+		if(r==s.begin()){
+			cnt++;
+			temp=w;
+		}else{
+			r--;
+			temp-=*r;
+			s.erase(r);
+		}
+	}
+	cout<<cnt<<endl;
+	*/
 
 }
 
