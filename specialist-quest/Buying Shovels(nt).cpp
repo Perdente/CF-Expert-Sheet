@@ -154,8 +154,6 @@ namespace number_theory {
         divs.insert(n / i);
       }
     }
-
-    //vins(divs);
     return divs;
   }
 }
@@ -166,12 +164,8 @@ void SectumSempra()
 {
 	cin>>sum>>k;
 	St s=getdivs(sum);
-	V v(all(s));
-	n=v.size();
-	lp(i,n){
-		if(v[i]<=k){
-			ans=sum/v[i];
-		}
+	LP(it,s){
+		if(it<=k)ans=sum/it;
 	}
 	cout<<ans<<endl;
 }
@@ -184,3 +178,4 @@ signed main(){
 	while(test--)SectumSempra();
 	return 0;
 }
+
