@@ -174,7 +174,6 @@ signed main(){
 	Loser();
 	test=1;
 	cin>>test;
-	genprimes(1e6);
 	while(test--)SectumSempra();
 	return 0;
 }
